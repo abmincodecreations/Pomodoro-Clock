@@ -89,6 +89,11 @@ handleBreakDecrease=()=>{
         clockCount: (breakCount-1)*60
       });
     }
+    else{
+      this.setState({
+        breakCount: breakCount-1
+      });
+    }
   }
 }
 
@@ -99,6 +104,10 @@ handleBreakIncrease=()=>{
       this.setState({
         breakCount: breakCount+1,
         clockCount: (breakCount+1)*60
+      });
+    }else{
+      this.setState({
+        breakCount: breakCount+1,
       });
     }
  }
@@ -168,7 +177,7 @@ convertTime=(count)=>{
           <SetTimer {...sessionProps} />
         </div>
         <div className="clock-box-continer">
-          <p><emphasize>Pomodoro Clock</emphasize></p>
+          <p><emphasize>Pomodoro</emphasize> <emphasize>Clock</emphasize></p>
           <p>{currentTimer}</p>
           <span class="timer">{this.convertTime(clockCount)}</span>
           <div className="flex">

@@ -115,7 +115,8 @@ button :active {
 .clock-box-continer p{
   font-family: 'Spectral', serif;
   text-align: center;
-  line-height: 15px;
+  line-height: 20px;
+  margin: 29px;
   
 }
 @media only screen and (max-width: 470px) {
@@ -130,6 +131,7 @@ button :active {
 }
 
 .timer{
+  margin: 5px;
   border: 2px solid white;
   height:100px;
   padding: 20px;
