@@ -141,7 +141,7 @@ button :active {
 .spinMovement{
   animation-name: spin;
   animation-duration: 800ms;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
   animation-timing-function: ease-out; 
 }
 @keyframes spin {
@@ -154,7 +154,7 @@ button :active {
 }
 .footertext{
   text-align: right;
-  color:rgb(158, 155, 155);
+  color:rgb(255, 255, 255);
   position:fixed;
   width: 98vw;
   left: 0px;
@@ -167,5 +167,5 @@ button :active {
 }
 .no-decoration{
   text-decoration: none;
-  color:rgb(199, 182, 182);
+  color:rgb(247, 247, 247);
 }
